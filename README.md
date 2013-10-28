@@ -10,3 +10,6 @@ This app is the judge system of Online Judge [UTPjudge](https://github.com/in-si
 ### Packages necessary to judging:
   gcc, g++, java, python.
   Note: If you need support for other languages, is necessary install the packages for every new laguage.
+  
+### Installation:
+  `# ./config.sh`
