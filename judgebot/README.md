@@ -12,4 +12,4 @@
 
 ### Usage
 
-  ./judgebot.sh (start|stop|status)
+  `# ./judgebot.sh (start|stop|status)`
