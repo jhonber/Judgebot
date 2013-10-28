@@ -1,5 +1,3 @@
-require 'socket'
-require 'thread'
 require 'httparty'
 require 'json'
 require "net/http"
@@ -116,7 +114,7 @@ class SJudge
 
 end
 
-# Get from arguments ip and port
+# Get from arguments
 ip   = "#{ARGV[0]}"
 port = "#{ARGV[1]}"
 time = "#{ARGV[2]}"
