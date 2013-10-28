@@ -1,4 +1,3 @@
-require 'socket'
 require 'httparty'
 require 'json'
 
