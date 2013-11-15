@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://utpjudge.elasticbeanstalk.com/exercise/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>UTP Online Judge</title>
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <link href="./final_results_files/application-5a764b4d1f721074c86f5f12482b5075.css" media="all" rel="stylesheet" type="text/css">
+        <script src="./final_results_files/application-46939f8e7a05988e1a9bc22771eb9ff7.js" type="text/javascript"></script>
+        <meta content="authenticity_token" name="csrf-param">
+<meta content="dPWP1c+KJfrjriz1DXRE5KGZgC3zFjj12inBSxlxOds=" name="csrf-token">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/x-mathjax-config;executed=true">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script type="text/javascript" src="./final_results_files/MathJax.js">
+    	  </script>
+    	  <script type="text/javascript" src="./final_results_files/jquery.min.js"></script>
+    	<style>
+    		.ace_editor {
+				position: relative !important;
+				height: 300px;
+				width: 100%;
+			}
+		</style>
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+  <body style=""><div id="MathJax_Message" style="display: none;"></div>
+      <div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="http://utpjudge.elasticbeanstalk.com/">Insilico - UTP Judge</a>
+      <div class="nav-collapse">
+        <ul class="nav"> 
+          <li class="divider-vertical"></li>
+          <li><a class="active" href="http://utpjudge.elasticbeanstalk.com/listexercises"> Home </a></li>
+            <li class="divider-vertical"></li>
+            <li><a class="active" href="http://utpjudge.elasticbeanstalk.com/submissions?uid=1">My submissions</a></li>
+          <li class="divider-vertical"></li>
+          <li><a class="active" href="http://utpjudge.elasticbeanstalk.com/listgroups/"> Groups </a></li>
+          <li class="divider-vertical"></li>
+          <li><a class="active" href="http://utpjudge.elasticbeanstalk.com/info"> About us </a></li>
+            <li class="divider-vertical"></li>
+            <li><a class="active" href="http://utpjudge.elasticbeanstalk.com/admin"> Admin </a></li>
+        </ul>
+        <ul class="nav pull-right">
+                <li>
+                    Signed in as root. Not you?
+                    <a href="http://utpjudge.elasticbeanstalk.com/users/sign_out">Sign Out</a>
+                </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+      
+      <div class="container-fluid">
+    <h1> UTP Open Contest I </h1>
+
+
+<p class="text-success">
+time to start : 0 minutes  | 
+time to end : 7199 minutes 
+</p>
+
+<table class="table table-bordered">
+  <tbody><tr>
+    <th>Rank</th>
+    <th>user</th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/1">A - Barking Machines</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/2">B - Binary search trees</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/3">C - Corn Cob Company</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/9">D - DNA School</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/5">E - Master</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/6">F - Primoshkas</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/7">G - Great Tutantoby's Descendent</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/8">H - Moralov's War</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/20">I - Dog Superior Council</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/21">J - SMAD</a>
+      </th>
+      <th>
+          <a href="http://utpjudge.elasticbeanstalk.com/exercises/1/exercise_problems/22">K - Bird teachers</a>
+      </th>
+    <th>Solved</th>
+    <th>Penalty</th>
+  </tr>
+
+   
+    <tr>
+      <td>1</td>
+      <td>Xellos</td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    13
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    77
+             
+             
+          </td>
+            
+            <td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  5 /
+                    38
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  3 /
+                    141
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    18
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    64
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    127
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    163
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    52
+             
+             
+          </td>
+      <td>9</td>
+      <td>833</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>lethalphony</td>
+            
+            <td style="background : #4CC417">
+
+                  4 /
+                    77
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    135
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  5 /
+                    118
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    167
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    11
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    108
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    137
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    199
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  4 /
+                    106
+             
+             
+          </td>
+      <td>9</td>
+      <td>1338</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>UTP - No name available</td>
+            
+            <td style="background : #4CC417">
+
+                  5 /
+                    188
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    148
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    57
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    213
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    48
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    106
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    96
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    69
+             
+             
+          </td>
+      <td>8</td>
+      <td>1025</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Hakuna_Matata</td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    75
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    147
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    37
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    287
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    60
+             
+             
+          </td>
+            
+            <td style="background : #f62817">
+
+                  8 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #f62817">
+
+                  7 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    121
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    45
+             
+             
+          </td>
+      <td>7</td>
+      <td>792</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Peludos</td>
+            
+            <td style="background : #4CC417">
+
+                  3 /
+                    197
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    279
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  4 /
+                    272
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    45
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  5 /
+                    216
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    130
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    85
+             
+             
+          </td>
+      <td>7</td>
+      <td>1444</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Carlos Joa</td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    50
+             
+             
+          </td>
+            
+            <td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #f62817">
+
+                  13 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  5 /
+                    73
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    264
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    35
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    146
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    63
+             
+             
+          </td>
+      <td>6</td>
+      <td>731</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>UH01</td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    69
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  5 /
+                    208
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    18
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  10 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    110
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    34
+             
+             
+          </td>
+      <td>5</td>
+      <td>559</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>mapaches</td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    111
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    68
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    220
+             
+             
+          </td>
+            
+            <td style="background : #f62817">
+
+                  2 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  2 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    144
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    103
+             
+             
+          </td>
+      <td>5</td>
+      <td>686</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>PU++</td>
+            
+            <td style="background : #4CC417">
+
+                  4 /
+                    180
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    62
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    148
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  5 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    233
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    64
+             
+             
+          </td>
+      <td>5</td>
+      <td>827</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>WrongAnswer</td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    214
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    125
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  5 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    271
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    188
+             
+             
+          </td>
+      <td>4</td>
+      <td>818</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Adroyl</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    103
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    38
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    117
+             
+             
+          </td>
+      <td>3</td>
+      <td>278</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>yos</td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    185
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    52
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    125
+             
+             
+          </td>
+      <td>3</td>
+      <td>402</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Sebastian</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td style="background : #4CC417">
+
+                  1 /
+                    255
+             
+             
+          </td>
+            
+            <td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    162
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    66
+             
+             
+          </td>
+      <td>3</td>
+      <td>483</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>carlos arias</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  7 /
+                    80
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  14 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    174
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    94
+             
+             
+          </td>
+      <td>3</td>
+      <td>488</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>UV-01</td>
+            
+            <td style="background : #f62817">
+
+                  4 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    181
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  3 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    209
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    117
+             
+             
+          </td>
+      <td>3</td>
+      <td>527</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>++UH++</td>
+            
+            <td style="background : #f62817">
+
+                  5 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    180
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    219
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    146
+             
+             
+          </td>
+      <td>3</td>
+      <td>605</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>eternauta</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  3 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    264
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    198
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    165
+             
+             
+          </td>
+      <td>3</td>
+      <td>667</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Los Greñuditos</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  3 /
+                    242
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  10 /
+                    283
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    161
+             
+             
+          </td>
+      <td>3</td>
+      <td>926</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>David Morales</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  8 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    240
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    72
+             
+             
+          </td>
+      <td>2</td>
+      <td>312</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>AlexITC</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    271
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    211
+             
+             
+          </td>
+      <td>2</td>
+      <td>482</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>ArcticCoders</td>
+            
+            <td style="background : #4CC417">
+
+                  2 /
+                    200
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  2 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    296
+             
+             
+          </td>
+      <td>2</td>
+      <td>516</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Jose Joya</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  11 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  6 /
+                    262
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    182
+             
+             
+          </td>
+      <td>2</td>
+      <td>544</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Héctor Martín Peña Pollastri</td>
+            
+            <td style="background : #4CC417">
+
+                  6 /
+                    290
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    263
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>2</td>
+      <td>653</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Daniel RT</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    47
+             
+             
+          </td>
+      <td>1</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Hazael</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  3 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    107
+             
+             
+          </td>
+      <td>1</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Luis Ruiz</td>
+            
+            <td style="background : #f62817">
+
+                  7 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  11 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    126
+             
+             
+          </td>
+      <td>1</td>
+      <td>126</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>alejandro</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    157
+             
+             
+          </td>
+      <td>1</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Los Lógicos</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  2 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    211
+             
+             
+          </td>
+      <td>1</td>
+      <td>231</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>K.O.P.</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    244
+             
+             
+          </td>
+      <td>1</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Fap Team &lt;3</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  4 /
+                    206
+             
+             
+          </td>
+      <td>1</td>
+      <td>266</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Miguel Angel Mendoza</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  1 /
+                    267
+             
+             
+          </td>
+      <td>1</td>
+      <td>267</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>alinyma</td>
+            
+            <td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  5 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #4CC417">
+
+                  2 /
+                    250
+             
+             
+          </td>
+      <td>1</td>
+      <td>270</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Manuel Morales</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>tomy_stark</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Felipe Aguirre</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Santiago Gutierrez</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Stty</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Cesar Garcia</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Eduardo Lopez</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Enmanuel Toribio</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Juan Pablo</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  3 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Smith</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Jorge Siri</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Paradigm Shift</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Jaime Viñas</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  6 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Kevin Alama</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Julio</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  2 /
+                    0
+             
+             
+          </td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Diego Serrano</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Piettro</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>abraham</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Antonio</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Sergio Torrado</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Los desinformaticos</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Daniel Melgarejo</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  4 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>tomystark</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Javier Fuentes</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Antonio Ruiz</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Caio Oliveira</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>jhon freddy</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>rey</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Edgar García Rodríguez</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Mario Cesar</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>UH++</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>arial12</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Alexis Iván</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>EstebanFS</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Dark_Nick</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  3 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>htrinh</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  3 /
+                    0
+             
+             
+          </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Hello World! </td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>roboterosuaa</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td style="background : #f62817">
+
+                  1 /
+                    0
+             
+             
+          </td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>berthin</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>Andres_Duran</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>Boxer</td>
+            
+            <td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+            
+            </td><td <="" td="">
+      </td><td>0</td>
+      <td>0</td>
+    </tr>
+</tbody></table>
+
+<script>
+  setTimeout("location.reload()", 600000);
+</script>
+
+</div>
+
+      <meta content="authenticity_token" name="csrf-param">
+<meta content="dPWP1c+KJfrjriz1DXRE5KGZgC3zFjj12inBSxlxOds=" name="csrf-token">
+  
+
+</body></html>
